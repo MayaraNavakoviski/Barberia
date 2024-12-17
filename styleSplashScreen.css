@@ -1,0 +1,82 @@
+/*Splash screen é a imagem que aparece quando um aplicativo é aberto e o conteúdo está sendo carregado.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #500000; /* Fundo escuro elegante */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF; /* Cor padrão dos textos */
+}
+
+/* Container principal */
+.splash {
+    text-align: center; /* Centraliza os elementos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre elementos */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animação de Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilização da Imagem */
+.splash img {
+    width: 200px; /* Tamanho inicial */
+    max-width: 50%; /* Responsividade */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra */
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Animação de Zoom-In */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Estilização do Texto */
+.splash h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FBBF24; /* Tom dourado para destaque */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    animation: slideDown 2s ease-in-out;
+}
+
+/* Animação de Slide-Down */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

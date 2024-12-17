@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilização para a mensagem de sucesso */
+        .mensagem-sucesso {
+            display: none;
+            /* Oculta inicialmente */
+            color: green;
+            font-size: 1.2em;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="servicos.html"> Serviços </a></li>
+            <li><a href="sobre.html"> Sobre </a></li>
+            <li><a href="contato.html" class="ativo"> Contato </a></li>
+            <li><a href="agenda.html"> Agenda </a></li>
+            <li><a href="historico.html" id="link-historico">Histórico</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <nav class="navbar">
+            <h1>Barbearia Falcone </h1>
+            <div class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contato">
+
+        <h1>Entre em Contato</h1>
+        <p>Tem alguma dúvida ou quer agendar um horário? Entre em contato conosco!</p>
+
+        <div class="container-contato">
+
+            <form class="form-contato" id="form-contato">
+
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu Nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Seu E-mail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mensagem de Sucesso -->
+            <div id="mensagem-sucesso" class="mensagem-sucesso">
+                Enviado com sucesso!
+            </div>
+
+            <div class="info-contato">
+                <h2>Nossas Informações</h2>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro, São Paulo</p>
+                <p><strong>Telefone:</strong> (45) 9034-6578</p>
+                <p><strong>Email:</strong> barbeariafalcone@gmail.com</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.759373840847!2d-46.6344215844725!3d-23.585572267090217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM1JzA5LjMiUyA0NsKwMzgnMDcuNSJX!5e0!3m2!1sen!2sbr!4v1618501737864!5m2!1sen!2sbr"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("form-contato").addEventListener("submit", function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Exibe a mensagem de sucesso
+            const mensagemSucesso = document.getElementById("mensagem-sucesso");
+            mensagemSucesso.style.display = "block";
+
+            // Limpa o formulário
+            document.getElementById("form-contato").reset();
+
+            // Esconde a mensagem após 3 segundos (opcional)
+            setTimeout(() => {
+                mensagemSucesso.style.display = "none";
+            }, 3000);
+        });
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active'); // Anima o botão hambúrguer
+        });
+
+
+    </script>
+
+</body>
+
+</html>

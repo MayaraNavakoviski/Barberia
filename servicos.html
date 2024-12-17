@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title> Serviços - Barbearia </title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="servicos.html" class="ativo"> Serviços </a></li>
+            <li><a href="sobre.html"> Sobre </a></li>
+            <li><a href="contato.html"> Contato </a></li>
+            <li><a href="agenda.html"> Agenda </a></li>
+            <li><a href="historico.html">Histórico</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <nav class="navbar">
+            <h1>Barbearia Falcone </h1>
+            <div class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+
+            <div class="servicos-container">
+
+                <div class="servico-card">
+                    <img src="Imagem/barba.png" alt="Barba Imagem">
+                    <h3>Barba</h3>
+                    <p>Deixe sua barba impecável com cortes e cuidados especiais.</p>
+                </div>
+
+                <div class="servico-card">
+                    <img src="Imagem/cabelo.png" alt="Cabelo Imagem">
+                    <h3>Cabelo</h3>
+                    <p>Transforme seu look com cortes e tratamentos modernos para o cabelo.</p>
+                </div>
+
+                <div class="servico-card">
+                    <img src="Imagem/cabelobarba.png" alt="">
+                    <h3>Cabelo e Barba</h3>
+                    <p>Serviço completo para cabelo e barba, com cortes e design personalizados.</p>
+                </div>
+
+                <div class="servico-card">
+                    <img src="Imagem/depilacaoL.png" alt="Depilação a Laser Imagem">
+                    <h3>Depilação a Laser</h3>
+                    <p>Depilação eficiente com tecnologia de laser, para um resultado duradouro.</p>
+                </div>
+
+                <div class="servico-card">
+                    <img src="Imagem/esteticaCorporal.png" alt="Estética Corporal Imagem">
+                    <h3>Estética Corporal</h3>
+                    <p>Tratamentos estéticos para o corpo, com técnicas avançadas e relaxantes.</p>
+                </div>
+
+                <div class="servico-card">
+                    <img src="Imagem/sobrancelha.png" alt="Sobrancelha Imagem">
+                    <h3> Sobrancelha </h3>
+                    <p> Transforme o olhar com design de sobrancelhas que realça sua beleza natural. </p>
+                </div>
+
+                <div class="servico-card">
+                    <img src="Imagem/tatuagem.png" alt=" Tatuagem Imagem">
+                    <h3> Tatuagem </h3>
+                    <p>Expressão de personalidade através da arte na pele. Criamos tatuagens exclusivas, com designs
+                        personalizados, sempre com cuidados e profissionalismo</p>
+                </div>
+
+                <div class="servico-card">
+                    <img src="Imagem/tatuagem.png" alt="Remoção de Tatuagem">
+                    <h3> Remoção de Tatuagem </h3>
+                    <p>Utilizando tecnologia avançada de laser, removemos sua tatuagem de forma segura e eficaz,
+                        deixando sua pele renovada e sem marcas indesejadas.</p>
+                </div>
+
+
+            </div>
+            <button class="agendamento-btn"><a href="agenda.html">Agendamento</a></button>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active'); // Anima o botão hambúrguer
+        });
+
+
+    </script>
+
+</body>
+
+</html>

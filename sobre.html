@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title> Sobre Nós - Barbearia</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="servicos.html"> Serviços </a></li>
+            <li><a href="sobre.html" class="ativo"> Sobre </a></li>
+            <li><a href="contato.html"> Contato </a></li>
+            <li><a href="agenda.html"> Agenda </a></li>
+            <li><a href="historico.html">Histórico</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <nav class="navbar">
+            <h1>Barbearia Falcone </h1>
+            <div class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="sobre-nos">
+        <div class="container">
+            <h2>Sobre nossa Família </h2>
+            <div class="sobre-content">
+                <div class="texto-sobre">
+                    <h3>A Tradição da Barbearia</h3>
+                    <p>A <strong>Barbearia Falcone </strong> nasceu com a missão de resgatar a essência dos cortes
+                        clássicos e dos cuidados masculinos. Com profissionais apaixonados pelo que fazem, buscamos
+                        sempre oferecer o melhor para nossos clientes, com uma experiência única e acolhedora.</p>
+                    <p>Nosso ambiente foi cuidadosamente pensado para proporcionar conforto e um espaço para que você se
+                        sinta em casa. Aqui, acreditamos que cada cliente merece um atendimento personalizado, seja para
+                        um corte clássico ou para aquele momento de relaxamento.</p>
+                    <p>Seja bem-vindo à nossa barbearia, onde tradição e modernidade se encontram para transformar seu
+                        visual e proporcionar a você uma experiência incomparável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipe">
+        <div class="container">
+            <h2>Nossa Equipe</h2>
+            <p>Conheça nossos profissionais e a equipe que faz a magia da nossa barbearia.</p>
+            <div class="equipe-container">
+                <div class="equipe-card">
+                    <i class="bi bi-person-fill"></i>
+                    <h3>Joana Souza</h3>
+                    <p>Especialista em cortes masculinos e styling. Com mais de 10 anos de experiência, Joana traz uma
+                        abordagem criativa e moderna para os cortes e penteados.</p>
+                </div>
+
+                <div class="equipe-card">
+                    <i class="bi bi-person-fill"></i>
+                    <h3>Carlos Silva</h3>
+                    <p>Barbeiro profissional, especialista em cortes masculinos clássicos e modernos. Com dedicação e
+                        atenção aos detalhes, Carlos transforma cada corte em uma obra de arte.</p>
+                </div>
+
+                <div class="equipe-card">
+                    <i class="bi bi-person-fill"></i>
+                    <h3>Fernanda Lima</h3>
+                    <p>Com anos de experiência em cuidados com a barba e serviços de estética, Fernanda é a responsável
+                        por garantir que nossos clientes saiam com o visual impecável.</p>
+                </div>
+
+                <div class="equipe-card">
+                    <i class="bi bi-person-fill"></i>
+                    <h3>Marco Antônio</h3>
+                    <p>Com habilidades em cortes rápidos e precisão, Marco é conhecido por transformar os looks com
+                        rapidez, mas sem perder a qualidade nos detalhes.</p>
+                </div>
+
+                <div class="equipe-card">
+                    <i class="bi bi-person-fill"></i>
+                    <h3>Lucas Pereira</h3>
+                    <p>Especialista em tatuagens realistas e estilo tradicional. Com mais de 8 anos de experiência,
+                        Lucas se dedica a criar designs únicos e personalizados para cada cliente.</p>
+                </div>
+
+                <div class="equipe-card">
+                    <i class="bi bi-person-fill"></i>
+                    <h3>Ricardo Silva</h3>
+                    <p>Ricardo é especializado em remoção de tatuagens a laser. Com anos de experiência na área, ele
+                        garante segurança e resultados eficazes no processo de remoção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active'); // Anima o botão hambúrguer
+        });
+
+
+    </script>
+
+</body>
+
+</html>
